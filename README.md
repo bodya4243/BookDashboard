@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# BookDashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BookDashboard is a web application for managing and visualizing book data.
 
-Currently, two official plugins are available:
+## Features
+- View a list of books with details
+- Add new books to the collection
+- Edit and delete book entries
+- Search and filter books
+- User authentication with JWT
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+### Backend
+1. Navigate to the backend directory:
+   ```sh
+   cd backend
+   ```
+2. Build and run the Spring Boot application:
+   ```sh
+   mvn clean install
+   mvn spring-boot:run
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+1. Navigate to the frontend directory:
+   ```sh
+   cd frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the React development server:
+   ```sh
+   npm start
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+```
+BookDashboard/
+│── backend/        # Spring Boot backend
+│── frontend/       # React frontend
+│── database/       # Database schema and migrations
+│── README.md       # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technologies Used
+- **Backend**: Java, Spring Boot, Hibernate, JWT authentication
+- **Frontend**: React, TypeScript, Redux
+- **Database**: PostgreSQL
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License.
