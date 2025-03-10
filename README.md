@@ -39,9 +39,8 @@ BookDashboard is a web application for managing and visualizing book data.
 ## Project Structure
 ```
 BookDashboard/
-│── backend/        # Spring Boot backend
+│── backend/        # json-server
 │── frontend/       # React frontend
-│── database/       # Database schema and migrations
 │── README.md       # Project documentation
 ```
 
