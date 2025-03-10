@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    display: flex;
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,59 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Адаптивна ширина */
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #535353;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Поля вводу залишаються такими ж, але додається адаптивність */
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Додаємо адаптивність для мобільних пристроїв */
+@media (max-width: 480px) {
+    .formContainer {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.29);
+    width: 100%;
+    max-width: 600px;
+    gap: 70px;
+    padding: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        max-width: 100%;
+        gap: 30px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+}

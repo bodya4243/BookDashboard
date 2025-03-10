@@ -1,0 +1,85 @@
+table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 300px
+}
+
+.booksQuantity {
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 3px 6px;
+    }
+
+    .filterContainer {
+        padding: 8px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .filterContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

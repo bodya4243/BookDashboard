@@ -1,0 +1,10 @@
+.container {
+    position: sticky;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+}
